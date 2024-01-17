@@ -60,9 +60,10 @@ while True:
             print("Can't be rotated")
         else:
             arr1=arr.copy()
+            arr2=arr.copy()
             l=len(arr)
             for k in range(x):
-                arr1[k]=arr1[l-x+k]
+                arr1[k]=arr2[l-x+k]
             for k in range(l-x):
                 arr1[k+x]=arr[k]
             print("Rotated Array by position ",x,":",arr1)
