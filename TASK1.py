@@ -67,6 +67,15 @@ while True:
             for k in range(l-x):
                 arr1[k+x]=arr[k]
             print("Rotated Array by position ",x,":",arr1)
+            '''k=0
+            while k<x:
+                l=len(arr)
+                temp=arr[l-1]
+                for i in range(l-1,0,-1):
+                    arr[i]=arr[i-1]
+                arr[0]=temp
+                k=k+1
+            print(arr)'''
     elif ch==6:
         break
     else:
